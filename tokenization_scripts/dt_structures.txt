@@ -1,0 +1,21 @@
+# Structure of 'label'
+
+dt = [('onset', 'float'), ('duration', 'float'), ('key', '<U10'), ('degree1', '<U10'), 
+      ('degree2', '<U10'), ('quality', '<U10'), ('inversion', 'int'), 
+      ('rchord', '<U20'), ('extra_info', '<U10')]
+
+
+# Structure of 'rtchords'
+dt = [('onset', 'float'), ('duration', 'float'), ('key', '<U10'), ('degree1', '<U10'), 
+      ('degree2', '<U10'), ('quality', '<U10'), ('inversion', 'int'), 
+      ('rchord', '<U20'), ('extra_info', '<U10'), ('root', '<U10'), ('tquality', '<U10')]
+
+# Structure of 'frame_labels'
+ dt = [('op', '<U10'), ('onset', 'float'), ('key', '<U10'), ('degree1', '<U10'), 
+       ('degree2', '<U10'), ('quality', '<U10'), ('inversion', 'int'), ('rchord', '<U20'), 
+       ('extra_info', '<U10'), ('root', '<U10'), ('tquality', '<U10')]
+
+# Structure of 'pieces'
+ dt = [('op', '<U10'), ('onset', 'float'), ('key', '<U10'), ('degree1', '<U10'), 
+       ('degree2', '<U10'), ('quality', '<U10'), ('inversion', 'int'), ('rchord', '<U20'), 
+       ('extra_info', '<U10'), ('root', '<U10'), ('tquality', '<U10'), ('chord_change', 'int')]

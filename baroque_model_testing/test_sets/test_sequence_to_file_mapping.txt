@@ -1,0 +1,107 @@
+# Mapping of test sequences to their original files
+
+## Sequences Grouped by File
+
+File 1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+File 2: [11, 12, 13, 14]
+File 3: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+File 4: [29, 30, 31, 32, 33, 34]
+File 5: [35, 36, 37, 38]
+File 6: [39, 40, 41, 42, 43, 44, 45, 46]
+File 7: [47, 48, 49, 50, 51, 52]
+File 8: [53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68]
+File 9: [69, 70, 71, 72]
+File 10: [73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90]
+
+## Individual Sequence Mapping
+
+Sequence 1 -> File 1
+Sequence 2 -> File 1
+Sequence 3 -> File 1
+Sequence 4 -> File 1
+Sequence 5 -> File 1
+Sequence 6 -> File 1
+Sequence 7 -> File 1
+Sequence 8 -> File 1
+Sequence 9 -> File 1
+Sequence 10 -> File 1
+Sequence 11 -> File 2
+Sequence 12 -> File 2
+Sequence 13 -> File 2
+Sequence 14 -> File 2
+Sequence 15 -> File 3
+Sequence 16 -> File 3
+Sequence 17 -> File 3
+Sequence 18 -> File 3
+Sequence 19 -> File 3
+Sequence 20 -> File 3
+Sequence 21 -> File 3
+Sequence 22 -> File 3
+Sequence 23 -> File 3
+Sequence 24 -> File 3
+Sequence 25 -> File 3
+Sequence 26 -> File 3
+Sequence 27 -> File 3
+Sequence 28 -> File 3
+Sequence 29 -> File 4
+Sequence 30 -> File 4
+Sequence 31 -> File 4
+Sequence 32 -> File 4
+Sequence 33 -> File 4
+Sequence 34 -> File 4
+Sequence 35 -> File 5
+Sequence 36 -> File 5
+Sequence 37 -> File 5
+Sequence 38 -> File 5
+Sequence 39 -> File 6
+Sequence 40 -> File 6
+Sequence 41 -> File 6
+Sequence 42 -> File 6
+Sequence 43 -> File 6
+Sequence 44 -> File 6
+Sequence 45 -> File 6
+Sequence 46 -> File 6
+Sequence 47 -> File 7
+Sequence 48 -> File 7
+Sequence 49 -> File 7
+Sequence 50 -> File 7
+Sequence 51 -> File 7
+Sequence 52 -> File 7
+Sequence 53 -> File 8
+Sequence 54 -> File 8
+Sequence 55 -> File 8
+Sequence 56 -> File 8
+Sequence 57 -> File 8
+Sequence 58 -> File 8
+Sequence 59 -> File 8
+Sequence 60 -> File 8
+Sequence 61 -> File 8
+Sequence 62 -> File 8
+Sequence 63 -> File 8
+Sequence 64 -> File 8
+Sequence 65 -> File 8
+Sequence 66 -> File 8
+Sequence 67 -> File 8
+Sequence 68 -> File 8
+Sequence 69 -> File 9
+Sequence 70 -> File 9
+Sequence 71 -> File 9
+Sequence 72 -> File 9
+Sequence 73 -> File 10
+Sequence 74 -> File 10
+Sequence 75 -> File 10
+Sequence 76 -> File 10
+Sequence 77 -> File 10
+Sequence 78 -> File 10
+Sequence 79 -> File 10
+Sequence 80 -> File 10
+Sequence 81 -> File 10
+Sequence 82 -> File 10
+Sequence 83 -> File 10
+Sequence 84 -> File 10
+Sequence 85 -> File 10
+Sequence 86 -> File 10
+Sequence 87 -> File 10
+Sequence 88 -> File 10
+Sequence 89 -> File 10
+Sequence 90 -> File 10

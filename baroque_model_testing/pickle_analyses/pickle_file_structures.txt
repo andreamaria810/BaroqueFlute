@@ -1,0 +1,376 @@
+
+
+
+Structure of the pickle file:
+Dict:
+  Key: 'baroque_on_baroque_preds'
+    Dict:
+      Key: 'key'
+        ndarray: [[15 15 15 ... 19 19 19]
+ [10 10 10 ... 19 19 19]
+...
+      Key: 'degree1'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'degree2'
+        ndarray: [[4 0 0 ... 0 0 4]
+ [4 0 0 ... 2 2 2]
+ [4 4 4 ... ...
+      Key: 'quality'
+        ndarray: [[0 1 0 ... 0 0 0]
+ [0 1 1 ... 1 0 0]
+ [0 0 0 ... ...
+      Key: 'inversion'
+        ndarray: [[0 2 2 ... 0 0 0]
+ [0 0 0 ... 0 1 2]
+ [1 1 1 ... ...
+      Key: 'chord_change'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 1 0 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'extra_info'
+        ndarray: [[ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  2  2 21]
+...
+  Key: 'romantic_on_baroque_preds'
+    Dict:
+      Key: 'key'
+        ndarray: [[15 15 15 ... 19 19 19]
+ [15 15 15 ... 19 19 19]
+...
+      Key: 'degree1'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'degree2'
+        ndarray: [[4 4 4 ... 0 4 4]
+ [0 1 1 ... 0 0 0]
+ [0 4 4 ... ...
+      Key: 'quality'
+        ndarray: [[0 6 6 ... 0 0 0]
+ [1 1 1 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'inversion'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'chord_change'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... ...
+  Key: 'baroque_test_data'
+    Dict:
+      Key: 'pianoroll'
+        ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+      Key: 'tonal_centroid'
+        ndarray: [[[-0.43449664  0.3303049   0.47077534 -0.04753004...
+      Key: 'len'
+        ndarray: [128 128 128 128  56 128  64 128 128 128 128 128 1...
+      Key: 'key'
+        ndarray: [[30 30 30 ... 34 34 34]
+ [34 34 34 ... 34 34 34]
+...
+      Key: 'degree1'
+        ndarray: [[ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]
+...
+      Key: 'degree2'
+        ndarray: [[ 3  0  0 ...  4  4  0]
+ [ 4  4  4 ...  0  3  3]
+...
+      Key: 'quality'
+        ndarray: [[ 0  0  0 ...  6  6  0]
+ [ 0  0  0 ...  0  0  0]
+...
+      Key: 'inversion'
+        ndarray: [[ 0  2  2 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]
+...
+      Key: 'extra_info'
+        ndarray: [[ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]
+...
+      Key: 'label'
+        Dict:
+          Key: 'chord_change'
+            ndarray: [[1 1 0 ... 0 0 1]
+ [1 0 0 ... 0 1 0]
+ [1 1 0 ... ...
+
+########################
+
+Structure of the pickle file:
+Dict:
+  Key: 'baroque_on_baroque_preds'
+    Dict:
+      Key: 'key'
+An error occurred: name 'np' is not defined
+
+(tf_test) C:\Users\amari\OneDrive\Documents\Master's Thesis\Git\BaroqueFlute\test_data>python examine_pickle.py
+Structure of the pickle file:
+Dict:
+  Key: 'baroque_on_baroque_preds'
+    Dict:
+      Key: 'key'
+        ndarray: [[15 15 15 ... 19 19 19]
+ [10 10 10 ... 19 19 19]
+...
+      Key: 'degree1'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'degree2'
+        ndarray: [[4 0 0 ... 0 0 4]
+ [4 0 0 ... 2 2 2]
+ [4 4 4 ... ...
+      Key: 'quality'
+        ndarray: [[0 1 0 ... 0 0 0]
+ [0 1 1 ... 1 0 0]
+ [0 0 0 ... ...
+      Key: 'inversion'
+        ndarray: [[0 2 2 ... 0 0 0]
+ [0 0 0 ... 0 1 2]
+ [1 1 1 ... ...
+      Key: 'chord_change'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 1 0 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'extra_info'
+        ndarray: [[ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  2  2 21]
+...
+  Key: 'romantic_on_baroque_preds'
+    Dict:
+      Key: 'key'
+        ndarray: [[15 15 15 ... 19 19 19]
+ [15 15 15 ... 19 19 19]
+...
+      Key: 'degree1'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'degree2'
+        ndarray: [[4 4 4 ... 0 4 4]
+ [0 1 1 ... 0 0 0]
+ [0 4 4 ... ...
+      Key: 'quality'
+        ndarray: [[0 6 6 ... 0 0 0]
+ [1 1 1 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'inversion'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... ...
+      Key: 'chord_change'
+        ndarray: [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... ...
+  Key: 'baroque_test_data'
+    Dict:
+      Key: 'pianoroll'
+        ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+      Key: 'tonal_centroid'
+        ndarray: [[[-0.43449664  0.3303049   0.47077534 -0.04753004...
+      Key: 'len'
+        ndarray: [128 128 128 128  56 128  64 128 128 128 128 128 1...
+      Key: 'key'
+        ndarray: [[30 30 30 ... 34 34 34]
+ [34 34 34 ... 34 34 34]
+...
+      Key: 'degree1'
+        ndarray: [[ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]
+...
+      Key: 'degree2'
+        ndarray: [[ 3  0  0 ...  4  4  0]
+ [ 4  4  4 ...  0  3  3]
+...
+      Key: 'quality'
+        ndarray: [[ 0  0  0 ...  6  6  0]
+ [ 0  0  0 ...  0  0  0]
+...
+      Key: 'inversion'
+        ndarray: [[ 0  2  2 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]
+...
+      Key: 'extra_info'
+        ndarray: [[ 0  0  0 ...  0  0  0]
+ [ 0  0  0 ...  0  0  0]
+...
+      Key: 'label'
+        Dict:
+          Key: 'chord_change'
+            ndarray: [[1 1 0 ... 0 0 1]
+ [1 0 0 ... 0 1 0]
+ [1 1 0 ... ...
+
+
+Structure of the pickle file:
+Dict:
+  Key: 'shift_0'
+    Dict:
+      Key: '1'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[-4.34496641e-01  3.30304891e-01  4.70775336e-01...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('1',   1.1666666, 'E-', '1', '4', 'M',  0, 'IV'...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128 128 128 128  56]...
+      Key: '2'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[ 0.32774514  0.20414434 -0.03348504  0.6026232 ...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('2',  0.  , 'C', '1', '1', 'M',  0, 'I', '', 'C...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128  64]...
+      Key: '3'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[ 7.31499135e-01  3.37179065e-01  3.59674275e-01...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('3',   0.5 , 'G', '1', '5', 'M',  0, 'V', '', '...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128 128 128 128 128 128  74]...
+      Key: '4'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[ 0.57069224 -0.24370906  0.2711174  -0.5350551 ...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('4',  0.  , 'b', '1', '1', 'm',  0, 'i', '', 'B...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128 128  48]...
+      Key: '5'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[ 7.5069046e-01 -2.7216253e-01  3.0039686e-01  6...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('5',  0.  , 'e', '1', '1', 'm',  0, 'i', '', 'E...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128 124]...
+      Key: '6'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[ 0.6768685  -0.00896669 -0.24191488 -0.70333153...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('6',   0.  , 'D', '1', '1', 'M',  0, 'I', '', '...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128 128 128  80]...
+      Key: '7'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[ 0.48808408  0.05293237  0.6539178   0.11331578...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('7',  0.  , 'e', '1', '1', 'm',  0, 'i', '', 'E...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128 128  96]...
+      Key: '8'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[ 0.6004723   0.3112669  -0.547825   -0.27439526...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('8',   0.  , 'd', '1', '1', 'm',  0, 'i', '', '...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128 128 128 128 128 128 128  28]...
+      Key: '9'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[ 0.39099124  0.11685458  0.26089162  0.32073492...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('9',  0.  , 'G', '1', '1', 'M',  0, 'I', '', 'G...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128 112]...
+      Key: '10'
+        Dict:
+          Key: 'pianoroll'
+            List (length: 2):
+                ndarray: [[[0 0 0 ... 0 0 0]
+  [0 0 0 ... 0 0 0]
+  [0 0 0 ....
+          Key: 'tonal_centroid'
+            List (length: 2):
+                ndarray: [[[ 5.20621166e-02  8.80295873e-01  4.38120514e-02...
+          Key: 'label'
+            List (length: 2):
+                ndarray: [[('10',  0.0000e+00, 'C', '1', '1', 'M',  1, 'I6'...
+          Key: 'len'
+            List (length: 2):
+                ndarray: [128 128 128 128 128 128 128 128  60]...

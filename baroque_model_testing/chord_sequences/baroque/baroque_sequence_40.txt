@@ -1,0 +1,133 @@
+Sequence 40 Chord Analysis
+--------------------------------------------------
+
+Time	Chord	Change	Components
+--------------------------------------------------
+1	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+2	A-:5/6.M		Key:A- D1:6 D2:5 Q:M I:0
+3	A-:5/6.M		Key:A- D1:6 D2:5 Q:M I:0
+4	A-:5.D7	*	Key:A- D1:1 D2:5 Q:D7 I:0
+5	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+6	A-:5.D7_1		Key:A- D1:1 D2:5 Q:D7 I:1
+7	A-:5_1		Key:A- D1:1 D2:5 Q:M I:1
+8	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+9	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+10	A-:5_1		Key:A- D1:1 D2:5 Q:M I:1
+11	A-:5_1		Key:A- D1:1 D2:5 Q:M I:1
+12	A-:1	*	Key:A- D1:1 D2:1 Q:m I:0
+13	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+14	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+15	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+16	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+17	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+18	A-:1(2)		Key:A- D1:1 D2:1 Q:m I:0 Extra:2
+19	A-:1(2)		Key:A- D1:1 D2:1 Q:m I:0 Extra:2
+20	A-:1(2)		Key:A- D1:1 D2:1 Q:m I:0 Extra:2
+21	A-:1(2)		Key:A- D1:1 D2:1 Q:m I:0 Extra:2
+22	A-:1(2)		Key:A- D1:1 D2:1 Q:m I:0 Extra:2
+23	A-:1(2)		Key:A- D1:1 D2:1 Q:m I:0 Extra:2
+24	A-:1(4)		Key:A- D1:1 D2:1 Q:m I:0 Extra:4
+25	A-:1(4)		Key:A- D1:1 D2:1 Q:m I:0 Extra:4
+26	A-:1(2)		Key:A- D1:1 D2:1 Q:m I:0 Extra:2
+27	A-:1(2)		Key:A- D1:1 D2:1 Q:m I:0 Extra:2
+28	A-:1_2(2)		Key:A- D1:1 D2:1 Q:m I:2 Extra:2
+29	A-:1_2(2)		Key:A- D1:1 D2:1 Q:m I:2 Extra:2
+30	A-:5.D7_2	*	Key:A- D1:1 D2:5 Q:D7 I:2
+31	A-:5.D7_2		Key:A- D1:1 D2:5 Q:D7 I:2
+32	A-:1	*	Key:A- D1:1 D2:1 Q:m I:0
+33	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+34	A-:5_2	*	Key:A- D1:1 D2:5 Q:M I:2
+35	A-:5_2		Key:A- D1:1 D2:5 Q:M I:2
+36	A-:5_2		Key:A- D1:1 D2:5 Q:M I:2
+37	A-:5.D7_2		Key:A- D1:1 D2:5 Q:D7 I:2
+38	A-:1_1	*	Key:A- D1:1 D2:1 Q:m I:1
+39	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+40	A-:5	*	Key:A- D1:1 D2:5 Q:m I:0
+41	A-:5		Key:A- D1:1 D2:5 Q:m I:0
+42	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+43	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+44	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+45	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+46	A-:1	*	Key:A- D1:1 D2:1 Q:m I:0
+47	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+48	A-:1	*	Key:A- D1:1 D2:1 Q:m I:0
+49	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+50	A-:1(9)		Key:A- D1:1 D2:1 Q:m I:0 Extra:9
+51	A-:1(9)		Key:A- D1:1 D2:1 Q:M I:0 Extra:9
+52	A-:4_2		Key:A- D1:1 D2:4 Q:M I:2
+53	A-:4_2		Key:A- D1:1 D2:4 Q:m I:2
+54	A-:5_2	*	Key:A- D1:1 D2:5 Q:M I:2
+55	A-:5_2		Key:A- D1:1 D2:5 Q:M I:2
+56	A-:5_2	*	Key:A- D1:1 D2:5 Q:M I:2
+57	A-:5_2		Key:A- D1:1 D2:5 Q:M I:2
+58	A-:5/3.M_2	*	Key:A- D1:3 D2:5 Q:M I:2
+59	E-:5/3.M_2		Key:E- D1:3 D2:5 Q:M I:2
+60	E-:5_2		Key:E- D1:1 D2:5 Q:M I:2
+61	E-:5_2		Key:E- D1:1 D2:5 Q:M I:2
+62	E-:1(4)	*	Key:E- D1:1 D2:1 Q:M I:0 Extra:4
+63	E-:1(4)		Key:E- D1:1 D2:1 Q:M I:0 Extra:4
+64	E-:5	*	Key:E- D1:1 D2:5 Q:M I:0
+65	E-:5		Key:E- D1:1 D2:5 Q:M I:0
+66	E-:5		Key:E- D1:1 D2:5 Q:M I:0
+67	E-:5		Key:E- D1:1 D2:5 Q:M I:0
+68	E-:5		Key:E- D1:1 D2:5 Q:M I:0
+69	E-:5		Key:E- D1:1 D2:5 Q:M I:0
+70	B+:5	*	Key:B+ D1:1 D2:5 Q:M I:0
+71	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+72	B+:5_2	*	Key:B+ D1:1 D2:5 Q:M I:2
+73	A-:5_2		Key:A- D1:1 D2:5 Q:M I:2
+74	B+:5	*	Key:B+ D1:1 D2:5 Q:M I:0
+75	B+:5		Key:B+ D1:1 D2:5 Q:M I:0
+76	B+:5_2	*	Key:B+ D1:1 D2:5 Q:M I:2
+77	B+:5_2		Key:B+ D1:1 D2:5 Q:M I:2
+78	A:5	*	Key:A D1:1 D2:5 Q:M I:0
+79	A:5		Key:A D1:1 D2:5 Q:M I:0
+80	A:5	*	Key:A D1:1 D2:5 Q:M I:0
+81	A:5		Key:A D1:1 D2:5 Q:M I:0
+82	A:5		Key:A D1:1 D2:5 Q:M I:0
+83	A:5_2		Key:A D1:1 D2:5 Q:M I:2
+84	A:5_2		Key:A D1:1 D2:5 Q:M I:2
+85	A:5_2		Key:A D1:1 D2:5 Q:M I:2
+86	A-:5.D7_2	*	Key:A- D1:1 D2:5 Q:D7 I:2
+87	A-:5.D7_2		Key:A- D1:1 D2:5 Q:D7 I:2
+88	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+89	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+90	A-:5_2	*	Key:A- D1:1 D2:5 Q:M I:2
+91	A-:5_2		Key:A- D1:1 D2:5 Q:M I:2
+92	A-:7_2		Key:A- D1:1 D2:7 Q:M I:2
+93	A-:5_2		Key:A- D1:1 D2:5 Q:M I:2
+94	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+95	A-:5		Key:A- D1:1 D2:5 Q:m I:0
+96	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+97	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+98	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+99	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+100	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+101	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+102	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+103	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+104	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+105	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+106	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+107	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+108	A-:7.d		Key:A- D1:1 D2:7 Q:d I:0
+109	A-:5.d		Key:A- D1:1 D2:5 Q:d I:0
+110	A-:5_1		Key:A- D1:1 D2:5 Q:M I:1
+111	A-:5_1		Key:A- D1:1 D2:5 Q:M I:1
+112	A-:5_1	*	Key:A- D1:1 D2:5 Q:M I:1
+113	A-:5_1		Key:A- D1:1 D2:5 Q:M I:1
+114	A-:5_1		Key:A- D1:1 D2:5 Q:M I:1
+115	A-:5_1		Key:A- D1:1 D2:5 Q:M I:1
+116	A-:1.a	*	Key:A- D1:1 D2:1 Q:a I:0
+117	A-:1.a		Key:A- D1:1 D2:1 Q:a I:0
+118	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+119	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+120	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+121	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+122	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+123	A-:5_1		Key:A- D1:1 D2:5 Q:M I:1
+124	A-:1	*	Key:A- D1:1 D2:1 Q:M I:0
+125	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+126	A-:5_2	*	Key:A- D1:1 D2:5 Q:M I:2
+127	A-:5_2		Key:A- D1:1 D2:5 Q:M I:2
+128	A-:1	*	Key:A- D1:1 D2:1 Q:M I:0

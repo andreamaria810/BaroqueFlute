@@ -1,0 +1,33 @@
+Sequence 34 Chord Analysis
+--------------------------------------------------
+
+Time	Chord	Change	Components
+--------------------------------------------------
+1	A-:5		Key:A- D1:1 D2:5 Q:m I:0
+2	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+3	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+4	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+5	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+6	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+7	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+8	A-:1.D7		Key:A- D1:1 D2:1 Q:D7 I:0
+9	A-:1.D7		Key:A- D1:1 D2:1 Q:D7 I:0
+10	A-:5.D7		Key:A- D1:1 D2:5 Q:D7 I:0
+11	A-:5.D7		Key:A- D1:1 D2:5 Q:D7 I:0
+12	A-:5.D7		Key:A- D1:1 D2:5 Q:D7 I:0
+13	A-:5.D7		Key:A- D1:1 D2:5 Q:D7 I:0
+14	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+15	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+16	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+17	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+18	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+19	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+20	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+21	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+22	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+23	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+24	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+25	D-:1		Key:D- D1:1 D2:1 Q:M I:0
+26	D-:1		Key:D- D1:1 D2:1 Q:M I:0
+27	D-:1		Key:D- D1:1 D2:1 Q:M I:0
+28	D-:1		Key:D- D1:1 D2:1 Q:M I:0

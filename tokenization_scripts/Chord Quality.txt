@@ -1,0 +1,16 @@
+Chord Quality
+M = major
+m = minor
+M7 = major 7th
+m7 = minor 7th
+D7 = dominant 7th
+a = augmented chord (1+)
+a6 = augmented 6th (+4: It+6, Fr+6, Gr+6)
+d = diminished
+d7 = diminished 7th
+h7 = half-diminished 7th
+
+
+
+
+

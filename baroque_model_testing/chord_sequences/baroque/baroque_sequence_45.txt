@@ -1,0 +1,65 @@
+Sequence 45 Chord Analysis
+--------------------------------------------------
+
+Time	Chord	Change	Components
+--------------------------------------------------
+1	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+2	A-:4	*	Key:A- D1:1 D2:4 Q:M I:0
+3	A-:4		Key:A- D1:1 D2:4 Q:M I:0
+4	A-:4		Key:A- D1:1 D2:4 Q:M I:0
+5	A-:4		Key:A- D1:1 D2:4 Q:M I:0
+6	A-:4		Key:A- D1:1 D2:4 Q:M I:0
+7	A-:4		Key:A- D1:1 D2:4 Q:M I:0
+8	A-:4		Key:A- D1:1 D2:4 Q:M I:0
+9	A-:6		Key:A- D1:1 D2:6 Q:M I:0
+10	A-:6		Key:A- D1:1 D2:6 Q:M I:0
+11	A-:3		Key:A- D1:1 D2:3 Q:M I:0
+12	A-:3		Key:A- D1:1 D2:3 Q:M I:0
+13	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+14	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+15	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+16	A-:7		Key:A- D1:1 D2:7 Q:M I:0
+17	A-:1		Key:A- D1:1 D2:1 Q:m I:0
+18	A-:2		Key:A- D1:1 D2:2 Q:m I:0
+19	A-:2_2		Key:A- D1:1 D2:2 Q:m I:2
+20	A-:2		Key:A- D1:1 D2:2 Q:m I:0
+21	A-:2		Key:A- D1:1 D2:2 Q:m I:0
+22	A-:4	*	Key:A- D1:1 D2:4 Q:M I:0
+23	A-:4		Key:A- D1:1 D2:4 Q:M I:0
+24	A-:4		Key:A- D1:1 D2:4 Q:m I:0
+25	A-:4		Key:A- D1:1 D2:4 Q:M I:0
+26	A-:1		Key:A- D1:1 D2:1 Q:M I:0
+27	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+28	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+29	B+:7		Key:B+ D1:1 D2:7 Q:M I:0
+30	A-:5	*	Key:A- D1:1 D2:5 Q:M I:0
+31	A-:5		Key:A- D1:1 D2:5 Q:M I:0
+32	B+:7_2		Key:B+ D1:1 D2:7 Q:M I:2
+33	B+:7_2		Key:B+ D1:1 D2:7 Q:M I:2
+34	B+:5		Key:B+ D1:1 D2:5 Q:M I:0
+35	B+:5		Key:B+ D1:1 D2:5 Q:M I:0
+36	B+:5	*	Key:B+ D1:1 D2:5 Q:M I:0
+37	B+:5		Key:B+ D1:1 D2:5 Q:M I:0
+38	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+39	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+40	B+:1.a		Key:B+ D1:1 D2:1 Q:a I:0
+41	B+:1.a		Key:B+ D1:1 D2:1 Q:a I:0
+42	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+43	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+44	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+45	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+46	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+47	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+48	B+:1(64)		Key:B+ D1:1 D2:1 Q:M I:0 Extra:64
+49	B+:5		Key:B+ D1:1 D2:5 Q:M I:0
+50	B+:1	*	Key:B+ D1:1 D2:1 Q:M I:0
+51	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+52	B+:1_2	*	Key:B+ D1:1 D2:1 Q:M I:2
+53	B+:5_2		Key:B+ D1:1 D2:5 Q:M I:2
+54	B+:5_2	*	Key:B+ D1:1 D2:5 Q:M I:2
+55	B+:5_2		Key:B+ D1:1 D2:5 Q:M I:2
+56	B+:5_2	*	Key:B+ D1:1 D2:5 Q:M I:2
+57	B+:5_2		Key:B+ D1:1 D2:5 Q:M I:2
+58	B+:1	*	Key:B+ D1:1 D2:1 Q:M I:0
+59	B+:1		Key:B+ D1:1 D2:1 Q:M I:0
+60	B+:1	*	Key:B+ D1:1 D2:1 Q:M I:0

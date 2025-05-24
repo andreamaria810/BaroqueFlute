@@ -1,0 +1,979 @@
+Training Log for Harmony Transformer
+Date: 2025-04-09 12:13:59
+Dataset: Sonatas, Test Set: 1
+Hyperparameters: hyperparameters(dataset='Sonatas', test_set_id=1, graph_location='model', n_steps=128, input_embed_size=128, n_layers=2, n_heads=4, train_sequence_with_overlap=True, initial_learning_rate=0.0001, drop=0.1, n_batches=20, n_training_steps=100000, n_in_succession=10, annealing_rate=1.1)
+
+================================================================================
+
+n_train_sequences = 9200
+n_test_sequences = 59
+n_iterations_per_epoch = 460
+hyperparameters(hyperparameters(dataset='Sonatas', test_set_id=1, graph_location='model', n_steps=128, input_embed_size=128, n_layers=2, n_heads=4, train_sequence_with_overlap=True, initial_learning_rate=0.0001, drop=0.1, n_batches=20, n_training_steps=100000, n_in_succession=10, annealing_rate=1.1))
+Saving graph to: model
+---- step 460, epoch 1: train_loss: total 9.5152 (cc 2.1127, k 3.6618, components 3.7408), evaluation: k 0.1122, components 0.5320, cc (P 0.2657, R 0.1408, F1 0.1840) ----
+enc_w = [0.32651252 0.33621514 0.33727235] dec_w = [0.32151943 0.33956915 0.3389114 ]
+len = 128
+y_k       f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#   f#
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    1    1    1    1    1    1    2    2    2    2    2    2    2    2    7    7    7    7    5    5    5    5    1    1    1    1    1    1    1
+y_q        m    m    m    m    m    m    m    m    m   m7   m7   m7   m7   m7   m7   m7   m7    d    d    d    d   D7   D7   D7   D7    m    m    m    m    m    m    m
+y_inv      0    0    0    0    0    0    0    0    0    3    3    3    3    3    3    3    3    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none    4    4    4    4 none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       1    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0
+pred_cc    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0
+pred_k    24   24   14   17   24   17   24   17    6   17   17   17    6   17    6   17   24   17   17   17   17   17   17   17   17   17   17   17   14   17   17   17
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    0    0    4    0    4    4    4    4    0    0    4    0    4    4    4    4    4    4    6    4    1    4    0    1    6    0    0    1    4    0    4
+pred_q     0    0    0    0    0    0    0    0    0    0    6    6    0    0    0    6    0    0    0    0    0    0    0    0    0    0    0    0    1    1    6    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    1    0    0    0    0    0    0    0    0    0    0    0
+len = 128
+y_k        G    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    1    1    1    1    1    1    6    6    6    6    6    6    6    6    2    2    2    2    2    2    2    2    5    5    5    5    5    5    5
+y_q        M    m    m    m    m    m    m    m    m    M    M    M    M    M    M    M    M   h7   h7   h7   h7   h7   h7   h7   h7    M    M    M    M    M    M    M
+y_inv      0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+y_k        4    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9
+pred_k    18   18   18   12   12   12   12   18   18    0    4   26    0    4    4    4    4    4    4    4    4    9    9    9   17   17   17   17   17   17   17   17
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    0    0    0    4    4    4    0    4    4    4    0    4    4    4    4    4    4    4    4    4    4    4    4    4    0    0    4
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+*saving variables...
+
+---- step 920, epoch 2: train_loss: total 6.1918 (cc 1.3706, k 2.1696, components 2.6516), evaluation: k 0.3207, components 0.6335, cc (P 0.6134, R 0.4454, F1 0.5161) ----
+enc_w = [0.32014224 0.34301063 0.33684716] dec_w = [0.28989595 0.35839212 0.35171196]
+len = 128
+y_k       G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       4    4    4    4    4    4    4    2    2    2    2    5    5    5    5    1    1    4    4    1    1    1    1    5    5    5    5    1    1    1    1    1
+y_q        M    M    M    M    M    M    M    m    m    m    m    M    M   D7   D7    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M
+y_inv      1    1    1    1    1    1    1    1    1    1    1    0    0    3    3    1    1    0    0    2    2    2    2    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    0
+pred_cc    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0
+pred_k    14   14   10   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    4    4    4    4    4    0    4    0    0    4    4    0    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    0    4    4
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    6    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    1    1    0    0    0    0    0    0
+len = 68
+y_k        e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       4    1    1    1    1    1    1    1    1    7    7    7    7    1    1    1    1    1    1    1    1   -2   -2   -2   -2   -2   -2   -2   -2    4    4    4
+y_q        m    m    m    m    m    m    m    m    m    d    d    d    d    m    m    m    m    m    m    m    m    M    M    M    M    M    M    M    M    m    m    m
+y_inv      0    1    1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0
+y_k        9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9
+pred_k     9    9    9    9    9    9    9    9    9    9    9    9    4    4    4    4    4    4    4    4    4    9    9    4    4    4    4    4    4    4    4    4
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    4    4    4    4    4    4    4    0    4    0    4    4    4    4    4    4    4    4    4    4    4    4    0    0    0    4    0    0    0    0    4
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+*saving variables...
+
+---- step 1380, epoch 3: train_loss: total 4.6628 (cc 1.0787, k 1.1755, components 2.4086), evaluation: k 0.6528, components 0.6621, cc (P 0.7111, R 0.6411, F1 0.6743) ----
+enc_w = [0.30434278 0.3600184  0.33563882] dec_w = [0.23357241 0.38843212 0.37799546]
+len = 128
+y_k       d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#
+y_d1       3    1    1    1    1    3    3    3    3    1    1    1    1    3    3    3    3    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    3    3    3    3    5    5    5    5    3    3    3    3    5    5    5    5    3    3    3    3    4    4    4    4    5    5    5    5    1    1    6
+y_q       D7    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    m    m    m    m   m7   m7   m7   m7    m    m    M
+y_inv      0    0    0    2    2    0    0    0    0    0    0    0    0    0    0    0    0    1    1    0    0    1    1    0    0    1    1    0    0    0    0    0
+y_ex    none none none    2    2 none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    1
+pred_cc    0    1    0    1    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+pred_k    17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17   17
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    4    4    4    0    0    4    4    4    4    0    0    0    4    4    4    4    4    0    4    4    0    0    4    4    0    4    0    0    0    0    4
+pred_q     0    0    0    6    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+len = 24
+y_k        G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G  pad  pad  pad  pad  pad  pad  pad  pad
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1  pad  pad  pad  pad  pad  pad  pad  pad
+y_d2       5    5    4    4    4    5    5    1    1    4    5    5    5    1    1    1    1    1    1    2    2    1    1    1  pad  pad  pad  pad  pad  pad  pad  pad
+y_q        M    M    M    M    M   D7    M    M    M    M    M   D7   D7    M    M    M    M    M    M    m    m    M    M    M  pad  pad  pad  pad  pad  pad  pad  pad
+y_inv      0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    2    2    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none  pad  pad  pad  pad  pad  pad  pad  pad
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    n    n    n    n    n    n    n    n
+y_cc       0    0    1    0    0    1    0    1    0    1    1    0    0    1    0    0    0    0    0    1    0    1    0    0    0    0    0    0    0    0    0    0
+pred_cc    0    1    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    1    0    0    0    0
+y_k        4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4   42   42   42   42   42   42   42   42
+pred_k     1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    0    4    4    4    0    0    0    0    4    0    0    4    0    0    0    4    0    4    4    4    0    0    0    4    0    0    0    0    0    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+*saving variables...
+
+---- step 1840, epoch 4: train_loss: total 3.9236 (cc 0.8339, k 0.8908, components 2.1989), evaluation: k 0.7419, components 0.6908, cc (P 0.7870, R 0.7497, F1 0.7679) ----
+enc_w = [0.29093736 0.3750173  0.33404535] dec_w = [0.19736391 0.40402362 0.39861244]
+len = 128
+y_k       C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    4    4    4    4    4    4    4    4    7    7    7    7    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5
+y_q        M   M7   M7   M7   M7   M7   M7   M7   M7    d    d    d    d    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M
+y_inv      0    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex       2 none none none none none none none none    2    2    2    2 none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    1
+pred_k    14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    4    4    4    4    4    4    6    4    4    4    4    4    4    4    0    4    4    4    4    0    4    4    4    4    4    4    0
+pred_q     0    0    0    0    0    0    0    0    6    6    6    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    6    6    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    1    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+len = 128
+y_k        e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    1    1    1    1    1    1    4    4    4    4    5    5    5    5    5    5    5    5    1    1    1    1    7    7    7    7    5    5    5
+y_q        m    m    m    m    m    m    m    m    m    m    m    m    m    M    M    M    M    M    M    M    M    m    m    m    m    d    d    d    d    M    M    M
+y_inv      0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       1    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0
+y_k        9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9
+pred_k     9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    0    0    0    0    0    4    4    4    4    4    4    0    0
+pred_q     0    1    1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    1    1    1    1    1    3    3    3    1    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 2300, epoch 5: train_loss: total 3.5349 (cc 0.6962, k 0.7799, components 2.0588), evaluation: k 0.7744, components 0.7129, cc (P 0.8234, R 0.8016, F1 0.8124) ----
+enc_w = [0.28067386 0.3854417  0.33388448] dec_w = [0.19791825 0.39857724 0.40350455]
+len = 128
+y_k        C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5
+y_q       D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7
+y_inv      0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_cc    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0
+pred_k     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_q     6    6    6    6    6    6    6    6    6    6    6    6    6    0    0    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+len = 128
+y_k        G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    4    4    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    5    5    5    5    5    5    1    1    1    1    1    1    1    1    1    1    5    5    4    4    4    4    1    1    1    1    2    2    2    2    1
+y_q        M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M   D7   D7    M    M    M    M    M    M    M    M   m7   m7   m7   m7    M
+y_inv      1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    3    3    1    1    1    1    2    2    2    2    1    1    1    1    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1
+pred_cc    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1
+y_k        4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_k     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    4    0    0    0    4    0    0    0    0    0    0    0    0    0    0    4    4    4    4    4    4    0    4    4    4    0    0    0    0    4
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 2760, epoch 6: train_loss: total 3.2306 (cc 0.6165, k 0.6998, components 1.9143), evaluation: k 0.7988, components 0.7378, cc (P 0.8454, R 0.8273, F1 0.8362) ----
+enc_w = [0.26688123 0.39316085 0.3399579 ] dec_w = [0.19968906 0.39266664 0.4076443 ]
+len = 128
+y_k        d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    5    5    5    5    5    5    5    5    1    1    1    1    1    1    1    1    1    1    1    1    5    5    5    5    1    1    1    1    5    5    5
+y_q        m   D7   D7   D7   D7   D7   D7   D7   D7    m    m    m    m    m    m    m    m    m    m    m    m   D7   D7   D7   D7    m    m    m    m    M    M    M
+y_inv      1    2    2    2    2    1    1    1    1    0    0    0    0    1    1    1    1    0    0    0    0    1    1    1    1    0    0    0    0    1    1    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+pred_cc    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+pred_k     8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    6    4    4    4    4    4    4    4    4    0    0    0    0    0    0    0    0    0    0    0    0    4    6    4    4    0    0    0    0    0    4    4
+pred_q     3    6    6    6    6    0    0    0    0    1    1    1    1    1    1    1    1    1    1    1    1    3    6    6    1    1    1    1    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    0    0    0    0    0    1    1    1
+len = 128
+y_k        e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e    e
+y_d1       1    6    6    6    6    1    1    1    1    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    1    1    1
+y_d2       3    5    5    5    5    6    6    6    6    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    7    7    7
+y_q        M   D7   D7   D7   D7    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M
+y_inv      1    1    1    1    1    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    1    1    1    1    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0
+y_k        9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9
+pred_k     4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_d1    0    4    4    4    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    0    0
+pred_d2    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_q     0    6    6    6    6    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    6    0    0    0    0
+pred_inv    1    1    1    3    1    0    0    0    1    1    1    1    1    1    1    1    1    0    0    0    1    1    1    1    1    1    1    1    1    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+*saving variables...
+
+---- step 3220, epoch 7: train_loss: total 2.9979 (cc 0.5657, k 0.6499, components 1.7824), evaluation: k 0.8143, components 0.7591, cc (P 0.8588, R 0.8449, F1 0.8518) ----
+enc_w = [0.2565967  0.39553815 0.3478651 ] dec_w = [0.19413522 0.39081767 0.41504708]
+len = 128
+y_k        b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b
+y_d1       1    7    7    7    7    7    7    7    7    7    7    7    7    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       4    5    5    5    5    5    5    5    5    5    5    5    5    7    7    7    7    7    7    7    7    7    7    7    7    5    5    5    5    5    5    5
+y_q        m   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7    M    M    M    M    M    M    M    M    M    M    M    M   D7   D7   D7   D7   D7   D7   D7
+y_inv      0    3    3    3    3    3    3    3    3    3    3    3    3    1    1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_k     5    5    5   13    5    5    5    5    5    5    5    5    5    5    5    5    5    5   13   13   13    5    1    5   13   13   13   13   13   13   13   13
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    4    4    4    4    4    4    4    4    0    4    4    4    4    4    4    4    4    0    4    4    4    4    4    4    4    4    4
+pred_q     0    6    6    6    6    6    6    6    0    6    6    6    6    0    0    0    0    0    0    0    0    0    0    0    0    6    6    0    6    6    0    6
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    1    1    0    0    1    1    1    0    1    1    0    0    0    0    0    0    0    1    1    0    0    0    0    0    0    0    1    0    0    0    0
+len = 128
+y_k        g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g
+y_d1       1    5    5    5    5    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    2    5    5    5    5    5    5    5    1    1    1    1    4    4    4    4    1    1    1    1    5    5    5    5    1    1    1    1    4    4    4
+y_q        M   d7    M    M    M    M    M    M    M    m    m    m    m    m    m    m    m    m    m    m    m    M    M    M    M    m    m    m    m    m    m    m
+y_inv      1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    1    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0
+y_k       11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11
+pred_k    11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    4    4    4    4    0    0    0    0    0    0    0    0    1    1    4    0    0    0    0    0    0    0    0    0    0    0    0
+pred_q     1    6    6    0    0    0    6    6    6    1    1    1    1    1    1    1    1    1    1    6    1    1    0    0    0    0    0    1    0    0    1    1
+pred_inv    1    0    0    0    0    0    0    0    0    1    1    1    1    0    0    1    0    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 3680, epoch 8: train_loss: total 2.8264 (cc 0.5317, k 0.6067, components 1.6880), evaluation: k 0.8289, components 0.7736, cc (P 0.8674, R 0.8547, F1 0.8610) ----
+enc_w = [0.2535531  0.39452568 0.35192123] dec_w = [0.18317585 0.39760846 0.4192157 ]
+len = 128
+y_k        c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    1    1    1    1    5    5    5    5    1    1    1    1    1    1    1    1    5    5    5    5    1    1    1    1    1    1    1    1    5
+y_q        m    m    m    m    m    m    m    M    M    M    M    m    m    m    m    m    m    m    m   D7   D7   D7   D7    m    m    m    m    m    m    m    m   D7
+y_inv      0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1
+pred_cc    0    1    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1
+pred_k     7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    4    4    4    4    0    0    0    0    0    0    0    0    1    4    4    4    0    0    0    0    0    0    0    0    4
+pred_q     1    1    1    1    1    1    1    0    0    0    6    1    1    1    1    1    1    1    1    3    1    6    3    1    1    1    1    1    1    1    1    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+len = 128
+y_k        D    D    D    D    D    D    D    D    D    D    D    A    A    A    A    A    A    A    A    A    A    A    A    A    A    A    A    A    A    A    A    A
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    1    1    1    1    1    1    1    1    5    5    5    5    5
+y_q        M    M    M    M    M    M    M    M    M    M    M   D7   D7   D7   D7   D7   D7   D7   D7    M    M    M    M    M    M    M    M    M    M    M    M    M
+y_inv      0    0    0    1    1    1    1    1    1    1    1    2    2    2    2    2    2    2    2    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none    4    4    4    4 none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0
+pred_cc    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0
+y_k        1    1    1    1    1    1    1    1    1    1    1    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5
+pred_k     5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    0    0    4    0    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    0    4    4    4    4    4    4    4
+pred_q     0    0    0    0    0    0    0    0    0    0    6    6    6    6    6    6    6    6    6    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    1    1    0    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 4140, epoch 9: train_loss: total 2.6886 (cc 0.5064, k 0.5712, components 1.6110), evaluation: k 0.8408, components 0.7850, cc (P 0.8731, R 0.8649, F1 0.8690) ----
+enc_w = [0.25199956 0.39521727 0.3527832 ] dec_w = [0.17302036 0.41151842 0.4154612 ]
+len = 128
+y_k       C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#   C#
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    1    1    1    1    5    5    1    1    1    1    1    1    1    1    7    7    1    1    4    4    1    1    7    7    7    7    7    7    1
+y_q        M    M    M    M    M    M    M   D7   D7    M    M    M    M    M    M    M    M    d    d    M    M    M    M    M    M    d    d    d    d    d    d    M
+y_inv      0    0    0    2    2    2    2    3    3    1    1    1    1    1    1    0    0    1    1    1    1    0    0    1    1    1    1    1    1    1    1    0
+y_ex    none none none none none none none none none none none none none none none none none none none    4    4 none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    1    0    1    0    0    0    0    0    0    0    1    0    1    0    1    0    1    0    1    0    0    0    0    0    1
+pred_cc    0    1    0    0    0    0    0    1    0    1    0    1    0    1    0    0    0    1    0    1    0    1    0    0    0    1    0    0    0    0    0    1
+pred_k    14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14   14
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    0    0    0    0    0    0    4    0    0    0    0    0    0    0    0    0    6    4    4    0    0    0    0    0    6    6    6    1    6    6    4
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    3    0    0    0    0    0    0    0    3    3    3    3    3    3    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    1    1    1    0    0    0    0    0    1    1    1    1    1    1    1    1    1    1    1    1    1    1    0
+len = 128
+y_k        c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    5    5    3    3    3    3    3    3    3    3    1    1    5    5    1    1    1    1    2    2    7    7    5    5    5    5    1    1    4    4    1
+y_q       D7   D7   D7    M    M    M    M    M    M    M    M    m    m    M    M    m    m    m    m   h7   h7    M    M    M    M    M    M    m    m    M    M    m
+y_inv      3    3    3    1    1    1    1    1    1    1    1    1    1    2    2    1    1    0    0    1    1    0    0    0    0    0    0    0    0    0    0    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none    9    9 none none    6    6 none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    1    0    0    0    0    0    0    0    1    0    1    0    1    0    0    0    1    0    1    0    1    0    0    0    1    0    1    0    1
+pred_cc    0    0    0    0    0    1    0    1    0    1    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0
+y_k        7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7
+pred_k    11   11   11   11   11   11    7    7    7    7    7    7   11    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    3    3    3    0    3    0    0    4    4    0    0    0    0    0    0    0
+pred_q     6    6    6    6    6    6    0    0    0    0    6    0    0    0    0    0    1    1    1    1    1    1    1    6    1    1    1    1    1    1    1    1
+pred_inv    0    0    0    0    0    1    1    0    0    0    1    1    1    1    1    1    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+*saving variables...
+
+---- step 4600, epoch 10: train_loss: total 2.5150 (cc 0.4685, k 0.5114, components 1.5350), evaluation: k 0.8602, components 0.7953, cc (P 0.8822, R 0.8771, F1 0.8797) ----
+enc_w = [0.24957319 0.3870114  0.3634154 ] dec_w = [0.16411343 0.42021647 0.41567007]
+len = 128
+y_k        g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    D    D    D
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    4    4    4    4    2    2    2    2    5    5    5    5    3    3    3    3    7    7    7    7    1    1    1    1    4    4    5    5    4    4    4
+y_q        M    m    m    m    m   h7   h7   h7   h7   D7   D7   D7   D7    M    M    M    M    d    d    d    d    m    m    m    m    m    m    M    M    m    m    m
+y_inv      1    1    1    0    0    1    1    0    0    1    1    0    0    1    1    0    0    2    2    1    1    1    1    0    0    0    0    0    0    0    0    0
+y_ex    none none none    4    4 none none    4    4 none none none none    7    7    7    7 none none    7    7 none none none none    6    6 none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    1    0    1    0    0
+pred_cc    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    1    0    1    0    0
+pred_k    11   11   11   11   11   11   11   11   11   11    1   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    2    2    0    1    1    1    1    6    4    4    4    6    2    4    4    3    6    6    1    0    0    0    0    1    3    4    4    4    0    3
+pred_q     1    1    1    1    1    6    8    8    1    8    6    0    0    1    1    0    1    1    1    1    1    1    1    1    1    8    1    0    0    0    1    1
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    1    0    0    0    1    1    1    1    1    1    1    0    0    1    1    0    1    1    0    1    0    1    0    1    1    1    0    0    0    0    0
+len = 128
+y_k        C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    1    1    1    1    1    1    1    1    2    2    2    2    2    2    2    2    5    5    5    5    5    5    1    1    5    5    5    5    2    2    2
+y_q        M    M    M    M    M    M    M    M    M    m    m    m    m    m    m    m    m    M    M    M    M    M    M    M    M    M    M    M    M   m7   m7   m7
+y_inv      0    0    0    2    2    0    0    1    1    1    1    1    1    0    0    1    1    0    0    0    0    0    0    2    2    0    0    0    0    0    0    0
+y_ex    none   94   94 none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    1    0    1    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0
+y_k        0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_k     4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    1    1    4    4    4    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    0    0    3    3    3    3    1    1    1    1    4    4    4    4    4    4    0    0    4    4    0    0    4    4    4
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    3    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 5060, epoch 11: train_loss: total 2.3295 (cc 0.4275, k 0.4495, components 1.4525), evaluation: k 0.8814, components 0.8060, cc (P 0.8921, R 0.8882, F1 0.8902) ----
+enc_w = [0.25095    0.37974688 0.36930305] dec_w = [0.15554917 0.42263806 0.4218128 ]
+len = 128
+y_k       a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#   a#
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    7    7    7
+y_d2       2    7    7    7    7    1    1    1    1    2    2    2    2    5    5    5    5    1    1    1    1    1    1    1    1    1    1    1    1    5    5    5
+y_q       h7    d    d    d    d    m    m    m    m   h7   h7   h7   h7    M    M    M    M    m    m    m    m    m    m    m    m    m    m    m    m    M    M    M
+y_inv      2    1    1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0
+pred_k    14   14   14   14   14   14   14   14   14   14   14   14   26   14   26   26   26   14   14   14   14   14   14   14   14   26   26   14   14   14   14   14
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    0    0    3    3
+pred_d2    4    6    6    6    6    0    0    0    0    0    0    1    1    0    4    4    4    0    0    1    0    4    4    4    1    4    4    4    4    4    4    4
+pred_q     0    3    3    3    3    1    0    0    0    1    1    8    5    0    0    0    0    0    1    1    1    0    0    1    1    0    0    0    0    0    6    6
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    1    1    1    0    0    0    0    0    0    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1
+len = 128
+y_k        D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    1    1    1    1    5    5    1    1    1    1    1    1    7    7    1    1    2    2    5    5    1    1    4    6    2    2    5    2    1
+y_q        M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    d    d    M    M    m    m    M   D7    M    M    M    m    m    m    M    m    M
+y_inv      0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    1    1    1    1    1    1    0    3    1    1    0    1    0    0    0    1    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       1    0    0    0    0    0    0    1    0    1    0    0    0    0    0    1    0    1    0    1    0    1    0    1    0    1    1    1    0    1    1    1
+pred_cc    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    1    0    1    0    1    0    1    0    1    0    1    0    1    0    1
+y_k        1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_k     1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    6    4    4    4    0    4    4    4    4    0    3    3    0    1    4    4    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    3    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 5520, epoch 12: train_loss: total 2.1917 (cc 0.3945, k 0.4103, components 1.3869), evaluation: k 0.8957, components 0.8142, cc (P 0.9010, R 0.8975, F1 0.8993) ----
+enc_w = [0.24468048 0.37955663 0.37576285] dec_w = [0.14723928 0.4220827  0.43067804]
+len = 128
+y_k        E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       7    7    7    1    1    1    1    1    1    1    1    4    4    4    4    5    5    5    5    4    4    4    4    4    4    1    1    4    4    4    4    2
+y_q        d    d    d    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M   h7
+y_inv      1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0    0    1
+y_ex    none none none    4    4    4    4    4    4 none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    1    0    1    0    0    0    1
+pred_cc    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1
+pred_k     2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    4    4    0    0    0    0    0    0    0    0    0    3    3    3    4    4    4    4    0    0    3    0    0    0    3    3    3    3    3    0    1
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    1    1    1    0    0    0    0    1    1    1    1    0    0    1    0    0    1    0    1    1    0    0    1    0    1    1    0    0    0    0    0    0
+len = 128
+y_k        D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    5    5    5    5    1    1    1    1    1    1    1    1    1    1    1    1    4    4    1    1    1    1    2    2    5    5    1    1    2    2    1
+y_q        M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    m    m    M    M    M    M   m7   m7    M
+y_inv      0    0    0    0    0    0    0    1    1    2    2    0    0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none    4    4 none none none none   42   42 none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       1    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    1    0    0    0    1    0    1    0    1    0    1    0    1
+pred_cc    0    0    0    1    0    1    0    1    0    1    0    1    0    0    0    0    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    0
+y_k        1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_k     1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    0    0    4    4    0    0    0    0    0    0    0    0    0    0    0    0    0    4    4    4    0    0    0    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+*saving variables...
+
+---- step 5980, epoch 13: train_loss: total 2.0501 (cc 0.3578, k 0.3684, components 1.3240), evaluation: k 0.9105, components 0.8222, cc (P 0.9109, R 0.9073, F1 0.9091) ----
+enc_w = [0.24095814 0.37596104 0.38308084] dec_w = [0.141091  0.4270794 0.4318295]
+len = 128
+y_k       d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   d#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    5    1    1    1    1    1    1    1    1    5    5    5    5    5    5    5    5    1    1    1    1    5    5    5    5    1    1    1    1    5    5
+y_q       D7   D7    m    m    m    m    m    m    m    m    M    M    M    M    M    M    M    M    m    m    m    m    M    M   D7   D7    m    m    m    m    M    M
+y_inv      3    3    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    0    0    1    1    0    0    3    3    1    1    1    1    1    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0
+pred_cc    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0
+pred_k    22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22   22
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    0    0    0    0    0    0    0    4    4    4    4    4    4    4    4    0    0    0    0    4    4    4    4    3    3    3    3    4    4
+pred_q     0    0    1    0    1    1    1    1    1    1    0    0    0    0    0    0    0    6    1    1    1    1    0    0    0    0    1    0    1    1    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    1    1    1    0    0    0    0    0    0    0    1    1    1    1    1    0    0
+len = 128
+y_k        C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    1    1    1    1    1    1    1    1    2    2    2    2    2    2    2    2    5    5    5    5    5    5    1    1    5    5    5    5    2    2    2
+y_q        M    M    M    M    M    M    M    M    M    m    m    m    m    m    m    m    m    M    M    M    M    M    M    M    M    M    M    M    M   m7   m7   m7
+y_inv      0    0    0    2    2    0    0    1    1    1    1    1    1    0    0    1    1    0    0    0    0    0    0    2    2    0    0    0    0    0    0    0
+y_ex    none   94   94 none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    1    0    1    0    0    0    1    0    0
+pred_cc    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0
+y_k        0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_k     4    4    4    4    4    4    4    4    0    0    4    4    4    4    4    4    4    4    4    4    1    4    4    1    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    4    4    4    4    4    4    3    3    3    3    1    6    6    4    0    0    0    0    0    0    0    0    0    0    0    0    4    4    4
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 6440, epoch 14: train_loss: total 1.9439 (cc 0.3331, k 0.3437, components 1.2671), evaluation: k 0.9190, components 0.8293, cc (P 0.9175, R 0.9132, F1 0.9153) ----
+enc_w = [0.2379054  0.3741077  0.38798693] dec_w = [0.1356234  0.42714214 0.4372344 ]
+len = 128
+y_k       g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#
+y_d1       1    4    4    4    4    4    4    4    4    4    4    4    4    1    1    1    1    7    7    7    7    7    7    7    7    1    1    1    1    1    1    1
+y_d2       1    5    5    5    5    5    5    5    5    5    5    5    5    4    4    4    4    5    5    5    5    5    5    5    5    7    7    7    7    5    5    5
+y_q        m   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7    m    m    m    m   D7   D7   D7   D7   D7   D7   D7   D7    M    M    M    M    M    M    M
+y_inv      0    3    3    3    3    3    3    3    3    3    3    3    3    0    0    0    0    3    3    3    3    3    3    3    3    1    1    1    1    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0
+pred_k    15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   25   25   25   25   15   25   25
+pred_d1    0    0    3    3    3    3    3    3    0    0    3    0    0    0    0    0    0    6    6    6    6    6    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    4    4    4    4    4    4    4    4    4    4    4    4    6    1    4    3    4    4    4    4    4    6    6    6    4    6    2    4    4    4    4
+pred_q     1    6    6    6    6    6    6    6    6    6    6    6    6    1    1    1    1    6    6    6    6    6    6    1    1    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    3    3    3    3    3    3    3    3    3    3    3    3    0    0    0    0    3    3    3    3    3    3    0    0    1    1    1    1    0    0    0
+len = 128
+y_k        G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    D    D    D    D    D
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       7    7    7    1    1    1    1    5    5    5    5    5    5    5    5    5    5    5    5    6    6    6    6    5    5    5    5    7    7    7    7    1
+y_q        d    d    d    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M   m7   m7   m7   m7    M    M    M    M    d    d    d    d    M
+y_inv      1    1    1    0    0    0    0    1    1    1    1    0    0    0    0    1    1    1    1    1    1    1    1    1    1    1    1    1    1    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1
+pred_cc    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1
+y_k        4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    1    1    1    1    1
+pred_k     1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    0    4    4    4    0    0    0    0    0    0    4    4    4    4    4    4    0    0    4    4    0    0    1    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    1    1    1    1    1    1    1    0    1    0    0    0    0    0    0    0    1    0    1    1    1    1    0    0    0    0    1    1    1    1    1
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 6900, epoch 15: train_loss: total 1.8272 (cc 0.3039, k 0.3151, components 1.2082), evaluation: k 0.9294, components 0.8365, cc (P 0.9249, R 0.9221, F1 0.9235) ----
+enc_w = [0.23016125 0.37114468 0.39869407] dec_w = [0.12966883 0.43002707 0.44030407]
+len = 128
+y_k        E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5
+y_q       D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7
+y_inv      0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_cc    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_k     2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_q     6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+len = 128
+y_k        g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    5    5    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    5    5    2    2    5    5    1    1    1    1    1
+y_q        M    M    M    m    m    m    m    m    m    m    m    m    m    m    m    m    m    m    m    m    m    M    M    d    d   D7   D7    m    m    m    m    m
+y_inv      0    0    0    0    0    0    0    1    1    1    1    1    0    1    1    0    0    1    1    2    2    0    0    0    0    0    0    0    0    0    0    2
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none    6    6 none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       1    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    1    0    1    0    1    0    0    0    0
+pred_cc    0    1    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1
+y_k       11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11
+pred_k    11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    6    4    4    4    4    0    0    0    0
+pred_q     0    0    0    0    1    1    1    1    0    1    1    1    1    1    1    1    1    1    1    1    1    1    1    3    0    0    0    0    0    1    1    1
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 7360, epoch 16: train_loss: total 1.7506 (cc 0.2871, k 0.2990, components 1.1645), evaluation: k 0.9356, components 0.8419, cc (P 0.9292, R 0.9266, F1 0.9279) ----
+enc_w = [0.22478946 0.37303624 0.40217426] dec_w = [0.12611021 0.43116125 0.44272846]
+len = 128
+y_k        d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d    d
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    1    1    1    1    6    6    5    5    1    1    5    5    5    5    1    1    2    2    1    1    4    4    5    5    5    5    1    1    1
+y_q        m    m    m    m    m    m    m    M    M    M    M    a    a    M    M    M    M    m    m   h7   h7    m    m    m    m    M    M   D7   D7    m    m    m
+y_inv      0    0    0    0    0    1    1    1    1    1    1    0    0    1    1    0    0    0    0    0    0    1    1    0    0    0    0    3    3    1    1    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       1    0    0    0    0    0    0    1    0    1    0    1    0    1    0    0    0    1    0    1    0    1    0    1    0    1    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    1    0    1    0    1    0    0    0    1    0    0    0    0    0    1    0    1    0    0    0    1    0    0
+pred_k     8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8    8
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    0    0    0    4    0    4    4    4    4    4    0    0    0    0    0    0    1    1    4    4    4    4    0    0    0
+pred_q     1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    8    0    0    6    0    1    1    1
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    1    0    0    0    0    1    1    1    0    1    1    1    0    1    1    0    0    0    0    0    0    1    1    0    1    0    0    0    0    0    0    1
+len = 128
+y_k        D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       2    2    2    1    1    1    1    4    4    4    4    2    2    2    2    5    5    5    5    5    5    5    5    1    1    1    1    1    1    1    1    1
+y_q       m7   m7   m7    M    M    M    M    M    M    M    M   m7   m7   m7   m7    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M
+y_inv      1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none    4    4    4    4 none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0
+pred_cc    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0
+y_k        1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_k     4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_d1    0    0    0    0    0    0    0    0    3    3    3    0    4    4    4    4    4    4    4    4    4    4    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    4    4    0    0    0    0    1    1    1    1    1    4    4    4    4    4    4    4    4    4    4    0    0    4    4    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    6    6    5    5    6    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0
+pred_inv    1    1    1    1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+*saving variables...
+
+---- step 7820, epoch 17: train_loss: total 1.6565 (cc 0.2600, k 0.2800, components 1.1165), evaluation: k 0.9418, components 0.8474, cc (P 0.9359, R 0.9343, F1 0.9351) ----
+enc_w = [0.22134122 0.3705439  0.40811488] dec_w = [0.12225623 0.43176195 0.44598183]
+len = 128
+y_k        E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E    E
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    5    5    5    5    5    5    5    5    5
+y_d2       1    1    1    1    1    1    1    1    1    1    1    4    4    4    4    4    4    4    4    4    4    4    4    5    5    5    5    5    5    5    5    5
+y_q        M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M   D7
+y_inv      1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0
+pred_cc    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0
+pred_k     2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2
+pred_d1    0    0    0    0    3    3    3    3    3    3    0    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    4    4    4    4    4    4
+pred_d2    4    0    4    4    4    4    0    4    4    4    4    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    4    4    4    4    4    4
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    1
+len = 24
+y_k        D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D  pad  pad  pad  pad  pad  pad  pad  pad
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1  pad  pad  pad  pad  pad  pad  pad  pad
+y_d2       1    1    1    1    1    1    1    5    5    5    5    1    1    1    1    5    5    5    5    1    1    1    1    1  pad  pad  pad  pad  pad  pad  pad  pad
+y_q        M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M   D7   D7    M    M    M    M    M  pad  pad  pad  pad  pad  pad  pad  pad
+y_inv      0    0    0    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none  pad  pad  pad  pad  pad  pad  pad  pad
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    n    n    n    n    n    n    n    n
+y_cc       0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0
+pred_cc    0    0    0    0    0    1    0    1    0    0    0    1    0    0    0    1    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_k        1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1   42   42   42   42   42   42   42   42
+pred_k     1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    4    4    4    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 8280, epoch 18: train_loss: total 1.5728 (cc 0.2389, k 0.2653, components 1.0686), evaluation: k 0.9471, components 0.8535, cc (P 0.9415, R 0.9398, F1 0.9407) ----
+enc_w = [0.21500605 0.36749783 0.4174961 ] dec_w = [0.11669568 0.42902562 0.45427877]
+len = 128
+y_k        f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f    f
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    1    1    1    1    1    1    1    1    5    5    5    5    1    1    1    1    5    5    5    5    4    4    4    4    5    5    5    5    5    5    5
+y_q        M    m    m    m    m    m    m    m    m   D7   D7   D7   D7    m    m    m    m    m    m    m    m    m    m    m    m    M    M    M    M   D7   D7   D7
+y_inv      0    0    0    0    0    1    1    1    1    2    2    2    2    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0    0    3    3    3
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0
+pred_cc    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0
+pred_k    10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10   10
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    0    0    4    4    4    4    0    0    0    0    4    4    4    4    3    3    3    3    4    4    4    4    4    4    4
+pred_q     1    1    1    1    1    1    1    1    1    6    6    6    6    1    1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    6    6    6
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    1    0    0    0    0    0    0    1    0    1    0    3    3    0    0    1    1    1    1    1    1    1    1    1    1    0    0    0    0    1    1    3
+len = 128
+y_k        G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    1    1    1    1    1    1    3    3    3    3    4    4    4    4    4    4    4    4    1    1    1    1    2    2    2    2    1    1    1
+y_q        M    M    M    M    M    M    M    M    M    m    m    m    m    m    m    m    m    m    m    m    m    M    M    M    M   m7   m7   m7   m7    M    M    M
+y_inv      0    0    0    0    0    0    0    0    0    2    2    2    2    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    2    2    2
+y_ex    none none none none none none none none none    6    6    6    6 none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       1    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+y_k        4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_k     4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    0    0    0    0    0    0    0    0    4    4    0    0    3    3    3    5    5    0    0    0    4    4    4    4    1    1    1    1    0    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0    0    5    5    5    5    0    0    0
+pred_inv    1    0    0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 8740, epoch 19: train_loss: total 1.4943 (cc 0.2220, k 0.2483, components 1.0240), evaluation: k 0.9530, components 0.8591, cc (P 0.9461, R 0.9441, F1 0.9451) ----
+enc_w = [0.20910321 0.3633247  0.42757204] dec_w = [0.112916   0.43045443 0.45662963]
+len = 128
+y_k       G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#   G#
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    5    5    5    5    5    5    5    5    6    6    6    6    6    6    6    6    2    2    2    2    2    2    2    2    3    3    3    3    3    3    3
+y_q        M    M    M    M    M    M    M    M    M    m    m    m    m   m7   m7   m7   m7    m    m    m    m    m    m    m    m   m7   m7   m7   m7   m7   m7   m7
+y_inv      0    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none    2    2    2    2 none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0
+pred_k    18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18   18
+pred_d1    0    0    0    0    0    0    5    0    0    0    0    0    0    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    4    4    4    4    5    5    2    2    2    5    1    5    4    1    1    1    1    1    6    6    5    5    5    0    5    0    0
+pred_q     0    0    0    0    0    0    0    0    0    1    1    1    1    5    5    5    1    1    1    1    1    1    1    1    1    1    5    5    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    2    2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    1    1    1    1    1    1    1    1    0    0    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1
+len = 128
+y_k        G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    5    5    1    1    1    1    1    1    1    1    1    1    1    1    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5
+y_q        M    M    M    M    M    M    M    M    M    M    M    M    M    M    M   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7    M    M    M    M    M
+y_inv      2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    3    3    3    3    3    3    3    3    3    3    0    0    0    0    0    0    0
+y_ex       2 none none none none none none none none none none none none none none   42   42   42   42   42   42   42   42   42   42 none none   64   64   64   64   64
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0
+y_k        4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_k     4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    4    4    4    4    4    4    4    4    4    4    4    4    0    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    6    6    6    6    6    6    6    0    6    6    6    6    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 9200, epoch 20: train_loss: total 1.4337 (cc 0.2073, k 0.2444, components 0.9820), evaluation: k 0.9545, components 0.8644, cc (P 0.9496, R 0.9478, F1 0.9487) ----
+enc_w = [0.20405914 0.36626357 0.42967725] dec_w = [0.10842891 0.43027863 0.4612925 ]
+len = 128
+y_k       g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#   g#
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    4    4    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    2    2    5    5    5    5    5    5    5    5    1    1    5    5    4    4    5    5    4    4    4    4    2    2    2    2    5    5    5    5    1
+y_q        M    d    d   D7   D7   D7   D7   D7   D7   D7   D7    m    m    M    M    m    m    M    M    m    m    m    m   h7   h7   h7   h7    M    M    M    M    m
+y_inv      0    0    0    1    1    1    1    1    1    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    1    0    0    0    0    0    0    0    1    0    1    0    1    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    1
+pred_cc    0    0    0    1    0    1    0    0    0    1    0    1    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1
+pred_k    25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25   25
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    3    3    3    4    4    4    4    4    4    4    0    0    0    4    0    0    0    0    0    3    3    3    3    1    1    1    4    4    4    4    4    0
+pred_q     1    1    1    6    6    6    6    6    6    0    1    1    1    0    0    1    1    1    1    1    1    1    1    3    3    8    6    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    1    1    1    1    1    0    0    0    0    1    1    0    0    0    0    0    0    0    0    0    1    1    0    0    0    0    0    0    1
+len = 118
+y_k        C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C
+y_d1       1    1    1    1    1    1    1    6    6    6    6    6    6    6    6    6    6    6    6    1    1    1    1    1    1    1    1    1    1    1    1    5
+y_d2       5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    6    6    6    6    6    6    6    6    6    6    6    6    5
+y_q       D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7    m    m    m    m    m    m    m    m    m    m    m    m   D7
+y_inv      3    3    3    3    3    3    3    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1
+pred_cc    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0
+y_k        0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_k     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    5    5    5    5    5    5    5    5    5    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    5    4    4    5    3    5    5    5    5    5    5    4    4    4    4    4    4    5    5    5    5    5    5    3    3    3    3    3    4    4
+pred_q     0    1    1    1    1    1    1    1    1    1    1    6    0    0    0    6    6    6    0    0    1    1    1    1    1    1    1    1    0    0    0    6
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 9660, epoch 21: train_loss: total 1.3808 (cc 0.1953, k 0.2357, components 0.9498), evaluation: k 0.9575, components 0.8684, cc (P 0.9530, R 0.9510, F1 0.9520) ----
+enc_w = [0.200584   0.36378828 0.43562773] dec_w = [0.10473736 0.42916855 0.46609405]
+len = 128
+y_k        D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D    D
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       4    1    1    1    1    1    1    7    7    1    1    1    1    4    4    4    4    5    5    5    5    1    1    1    1    1    1    5    5    1    1    5
+y_q        M    M    M    M    M    M    M    d    d    M    M    M    M    M    M    M    M   D7   D7   D7   D7    M    M    M    M    M    M    M    M    M    M    M
+y_inv      2    0    0    0    0    1    1    1    1    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0    0    0    0    1    1    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    1    0    1    0    1
+pred_cc    0    1    0    0    0    0    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    1    0    1    0    1
+pred_k     1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    0    0    0    0    0    0    6    6    0    0    0    0    3    3    3    3    4    4    4    4    0    0    0    0    0    0    0    0    0    0    0
+pred_q     0    0    0    0    0    0    0    3    3    0    0    0    0    0    0    0    0    6    6    6    6    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    1    1    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0    0    0    0    1    1    0    0    0
+len = 118
+y_k        C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C    C
+y_d1       1    1    1    1    1    1    1    6    6    6    6    6    6    6    6    6    6    6    6    1    1    1    1    1    1    1    1    1    1    1    1    5
+y_d2       5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    6    6    6    6    6    6    6    6    6    6    6    6    5
+y_q       D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7   D7    m    m    m    m    m    m    m    m    m    m    m    m   D7
+y_inv      3    3    3    3    3    3    3    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1
+pred_cc    0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0
+y_k        0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_k     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    5    1    5    5    1    1    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    1    1    3    0    4    4    4    4    4    4    4    4    4    4    4    4    5    5    5    4    4    4    3    3    3    1    4
+pred_q     0    0    0    0    0    1    1    1    1    6    6    6    1    0    0    6    6    6    6    0    0    1    1    1    1    1    1    1    1    1    0    6
+pred_inv    0    0    0    0    0    1    1    0    0    1    0    0    0    0    0    0    0    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 10120, epoch 22: train_loss: total 1.3118 (cc 0.1784, k 0.2248, components 0.9087), evaluation: k 0.9612, components 0.8737, cc (P 0.9568, R 0.9559, F1 0.9563) ----
+enc_w = [0.1974323  0.36273092 0.4398368 ] dec_w = [0.10020018 0.4304377  0.46936214]
+len = 128
+y_k        a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a    a
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       2    2    2    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    5    1    1    1    1    4    4    4    4    5    5    5    5    1
+y_q        m    m    m    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    m    m    m    m    m    m    m    m    M    M   D7   D7    m
+y_inv      0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    3    3    1
+y_ex    none none none none none none none none none none none    9    9    9    9 none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1
+pred_cc    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1
+pred_k    12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12   12
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    3    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    0    0    0    0    3    3    3    3    4    4    4    4    4
+pred_q     1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0    1    1
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0    0    1    0    0    0    0    1    1    0    0    0    0    1    1    1
+len = 70
+y_k        c    c    c    c    c    c    c    c    c    c    c    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    6    6    6    6    6    6    6    6    5    5    5    5    1    1    2    2    1    1    4    4    5    5    5    5    1    1    1    1    4
+y_q        m    m    m    M    M    M    M    M    M    M    M    M    M   D7   D7    m    m    d    d    m    m   m7   m7    M    M    M    M    m    m    m    m    M
+y_inv      0    0    0    1    1    1    1    2    2    2    2    0    0    3    3    1    1    1    1    2    2    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    1    0    1    0    1    0    1    0    0    0    1    0    0    0    1
+pred_cc    0    1    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    0
+y_k        7    7    7    7    7    7    7    7    7    7    7   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11
+pred_k     7    7    7    7    7    7    7    7    7    7    7    7   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    3    3    3    3    3    3    3    3    4    4    4    4    4    4    4    4    0    0    0    0    4    4    4    4    0    0    0    0    0
+pred_q     0    0    0    1    1    1    1    0    0    1    1    0    0    0    0    0    0    0    0    1    1    1    0    0    0    0    0    0    1    1    1    1
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 10580, epoch 23: train_loss: total 1.2627 (cc 0.1711, k 0.2182, components 0.8733), evaluation: k 0.9637, components 0.8781, cc (P 0.9589, R 0.9570, F1 0.9580) ----
+enc_w = [0.19145474 0.36182904 0.44671628] dec_w = [0.09711929 0.4290634  0.47381732]
+len = 128
+y_k        F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F    F
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       5    1    1    1    1    1    1    1    1    4    4    4    4    1    1    1    1    1    1    1    1    1    1    1    1    4    4    4    4    1    1    1
+y_q        M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M    M
+y_inv      0    1    1    0    0    0    0    1    1    0    0    2    2    1    1    0    0    0    0    0    0    0    0    0    0    2    2    2    2    0    0    0
+y_ex    none none none none none none none    9    9    4    4 none none none none none none none none none none   72   72   94   94    4    4 none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0
+pred_k     3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3    3
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    0    0    3    3    3    3    0    0    0    0    0    0    0    0    0    0    0    0    3    3    3    3    0    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0   21    0    0    0    0
+pred_ex    0    0    1    0    0    0    0    0    1    0    0    0    0    0    1    1    2    2    0    0    0    0    0    0    0    2    2    0    0    0    0    0
+len = 128
+y_k        g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g    g
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    5    5    5    5    1    1    1
+y_d2       1    1    1    1    1    4    4    4    4    1    1    1    1    5    5    5    5    1    1    1    1    4    4    4    4    7    7    7    7    5    5    5
+y_q        m    m    m    m    m    m    m    m    m    m    m    m    m    M    M    M    M    m    m    m    m    m    m    m    m   d7   d7   d7   d7    M    M    M
+y_inv      0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       1    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+pred_cc    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0
+y_k       11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11
+pred_k    11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11   11
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    0    0    5    5    0    0    4    4    4    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_q     0    1    1    1    1    1    1    1    1    5    5    5    1    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    1    1    1    1
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 11040, epoch 24: train_loss: total 1.2055 (cc 0.1586, k 0.2118, components 0.8351), evaluation: k 0.9664, components 0.8830, cc (P 0.9619, R 0.9606, F1 0.9612) ----
+enc_w = [0.18491334 0.35897416 0.45611253] dec_w = [0.09471559 0.4301785  0.4751059 ]
+len = 128
+y_k        G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    1    1    1    1    5    5    5    5    1    1    1    1    1    1    1    1    5    5    5    5    1    1    1    1    5    5    5    5    1
+y_q        M    M    M    M    M    M    M   D7   D7   D7   D7    M    M    M    M    M    M    M    M   D7   D7   D7   D7    M    M    M    M   D7   D7   D7   D7    M
+y_inv      0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    1    1    1    1    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1
+pred_cc    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1
+pred_k     4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    6    6    1    4    0    0    0    0    0    0    0    0    6    4    4    4    0    0    0    0    4    4    4    4    0
+pred_q     0    0    0    0    0    0    0    3    3    3    3    0    0    0    0    0    0    0    0    3    6    6    6    0    0    0    0    6    6    6    6    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    1    1    1    1    0    0    0    0    1    1    1    1    0
+len = 128
+y_k        b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b    b
+y_d1       4    4    4    4    4    4    4    4    4    1    1    1    1    4    4    4    4    1    1    1    1    4    4    4    4    1    1    1    1    1    1    1
+y_d2       5    5    5    5    5    5    5    5    5    4    4    4    4    5    5    5    5    4    4    4    4    5    5    5    5    4    4    4    4    4    4    4
+y_q       D7    M    M    M    M    M    M    M    M    m    m    m    m    M    M    M    M    m    m    m    m   D7   D7   D7   D7    m    m    m    m    m    m    m
+y_inv      3    1    1    1    1    1    1    1    1    0    0    0    0    1    1    1    1    0    0    0    0    2    2    2    2    1    1    1    1    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    0    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0
+pred_cc    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0
+y_k       13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13   13
+pred_k     9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9    9
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    4    4    4    4    4    4    0    0    0    0    4    4    4    4    0    0    0    0    4    4    4    4    0    0    0    0    0    0    0
+pred_q     1    6    6    6    6    6    1    0    0    1    1    1    1    0    0    0    0    1    1    1    1    6    6    6    6    1    1    1    1    1    1    1
+pred_inv    0    1    1    1    0    1    1    1    1    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    0    0    1    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 11500, epoch 25: train_loss: total 1.1569 (cc 0.1481, k 0.2051, components 0.8037), evaluation: k 0.9678, components 0.8869, cc (P 0.9642, R 0.9634, F1 0.9638) ----
+enc_w = [0.18262848 0.3593471  0.4580244 ] dec_w = [0.09146845 0.4255619  0.48296964]
+len = 128
+y_k       D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#   D#
+y_d1       1    1    1    1    1    1    1    4    4    4    4    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    2    2    2    2    2
+y_d2       1    5    5    1    1    1    1    5    5    5    5    4    4    4    4    4    4    4    4    2    2    2    2    5    5    5    5    5    5    5    5    5
+y_q        M    M    M    M    M    M    M   D7   D7   D7   D7    M    M    M    M    M    M    M    M    m    m    m    m    m    m    m    m    M    M    M    M    M
+y_inv      1    2    2    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0
+pred_cc    0    1    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    0
+pred_k    18   15   15   18   18   15   15   15   18   15   18   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15   15
+pred_d1    0    0    0    0    0    0    0    0    0    3    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    1    1    1
+pred_d2    0    0    0    4    4    0    0    4    4    4    4    3    3    3    3    3    3    3    3    1    1    3    1    1    1    1    1    4    4    4    4    4
+pred_q     0    0    0    0    0    0    0    0    6    6    6    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+len = 24
+y_k        G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G  pad  pad  pad  pad  pad  pad  pad  pad
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1  pad  pad  pad  pad  pad  pad  pad  pad
+y_d2       5    5    4    4    4    5    5    1    1    4    5    5    5    1    1    1    1    1    1    2    2    1    1    1  pad  pad  pad  pad  pad  pad  pad  pad
+y_q        M    M    M    M    M   D7    M    M    M    M    M   D7   D7    M    M    M    M    M    M    m    m    M    M    M  pad  pad  pad  pad  pad  pad  pad  pad
+y_inv      0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    2    2    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none  pad  pad  pad  pad  pad  pad  pad  pad
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    n    n    n    n    n    n    n    n
+y_cc       0    0    1    0    0    1    0    1    0    1    1    0    0    1    0    0    0    0    0    1    0    1    0    0    0    0    0    0    0    0    0    0
+pred_cc    0    1    0    1    0    1    0    1    0    1    1    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_k        4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4   42   42   42   42   42   42   42   42
+pred_k     1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    4    4    4    0    0    4    4    0    0    4    4    4    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+---- step 11960, epoch 26: train_loss: total 1.1217 (cc 0.1423, k 0.2058, components 0.7736), evaluation: k 0.9686, components 0.8912, cc (P 0.9656, R 0.9651, F1 0.9654) ----
+enc_w = [0.17857644 0.35947362 0.46194994] dec_w = [0.08849777 0.4253951  0.48610708]
+len = 128
+y_k       c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#   c#
+y_d1       7    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    4    4    4    4    1    1    1
+y_d2       5    5    5    5    5    1    1    4    4    5    5    5    5    5    5    5    5    1    1    1    1    1    1    6    6    5    5    5    5    5    5    5
+y_q       D7    M    M   D7   D7    m    m   m7   m7    M    M    M    M    M    M    M    M    m    m    m    m    m    m    M    M   D7   D7   D7   D7    M    M    M
+y_inv      0    0    0    3    3    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none    4    4    4    4 none none none none none none none none none none none none none none none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    0    0    1    0    1    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    1    0    1    0    0    0    1    0    0
+pred_cc    0    1    0    0    0    1    0    1    0    1    0    0    0    0    0    0    0    1    0    0    0    0    0    1    0    1    0    0    0    1    0    0
+pred_k    21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21   21
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    3    6    3    0    0    0
+pred_d2    4    4    4    4    4    0    0    0    0    4    4    4    4    4    4    4    4    0    0    0    0    0    0    3    5    4    4    4    4    4    4    4
+pred_q     0    0    0    0    6    1    1    1    1    0    0    0    0    0    0    0    0    1    1    1    1    1    1    0    0    6    6    6    6    1    1    1
+pred_inv    0    0    0    0    0    0    0    0    0    0    2    2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    3    3    1    1    1    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    1    0    0    3    0    0    1    1    1
+len = 128
+y_k        G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+y_d2       1    1    1    4    4    4    4    1    1    5    5    5    5    5    5    5    5    2    2    7    7    5    5    7    7    1    1    1    1    1    1    1
+y_q        M    M    M    M    M    M    M    M    M    M    M    M    M   D7   D7    M    M   m7   m7    d    d    M    M    d    d    M    M    M    M    M    M    M
+y_inv      0    0    0    2    2    2    2    0    0    0    0    0    0    3    3    1    1    0    0    1    1    1    1    0    0    0    0    2    1    0    0    0
+y_ex    none none none none none none none none none    6    6 none none none none none none none none none none none none none none    4    4 none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       1    0    0    1    0    0    0    1    0    1    0    0    0    0    0    0    0    1    0    1    0    1    0    1    0    1    0    0    0    0    0    0
+pred_cc    0    1    0    0    0    0    0    0    0    1    0    0    0    1    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    0    0    0
+y_k        4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_k     4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    0    0    0    0    0    0    3    0    0    4    4    0    6    1    3    0    4    4    4    4    4    4    4    4    0    0    0    0    0    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    1    1    1    3    3    0    0    0    0    6    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    1    1    0    0    0    0    0    0    1    1    1    1    0    0    0    0    1    1    1    1    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    2    2    2    2    0    0    0    0    2    2    0    0    0    0    0
+---- step 12420, epoch 27: train_loss: total 1.0769 (cc 0.1363, k 0.2006, components 0.7400), evaluation: k 0.9700, components 0.8954, cc (P 0.9673, R 0.9670, F1 0.9672) ----
+enc_w = [0.17575581 0.36202022 0.46222398] dec_w = [0.08614071 0.42903242 0.48482686]
+len = 128
+y_k        c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c    c
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    4    4    4    4    1    1    1    1    3    3    3    3    1    1    1    1    1    1    1
+y_d2       7    1    1    7    7    1    1    4    4    5    5    5    5    5    5    5    5    4    4    4    4    5    5    5    5    3    3    3    3    1    1    1
+y_q        d    m    m    d    d    m    m    m    m   d7   d7   d7   d7    M    M    M    M    m    m    m    m   D7   D7    M    M    M    M    M    M    m    m    m
+y_inv      1    0    0    1    1    1    1    0    0    0    0    3    3    1    1    0    0    0    0    0    0    1    1    0    0    0    0    0    0    1    1    0
+y_ex    none none none none none none none none none none none none none none none none none    9    9 none none none none none none   42   42 none none none none none
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y
+y_cc       0    1    0    1    0    1    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+pred_cc    0    1    0    1    0    1    0    1    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0    0    1    0    0
+pred_k     7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7    7
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    2    2    2    0    0    0    0    0    0    0    0
+pred_d2    4    0    0    6    6    4    0    0    0    4    4    4    4    4    4    4    4    0    0    0    0    4    4    4    4    1    3    3    2    5    0    0
+pred_q     0    1    1    3    3    0    0    1    1    0    0    6    6    0    0    0    0    1    1    1    1    0    0    0    0    4    0    0    0    1    1    1
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    2    0    2   19    0    0    0
+pred_ex    0    0    0    1    1    1    1    1    0    0    0    0    0    1    1    0    0    0    0    0    0    1    1    0    0    0    0    0    0    1    1    1
+len = 24
+y_k        G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G    G  pad  pad  pad  pad  pad  pad  pad  pad
+y_d1       1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1  pad  pad  pad  pad  pad  pad  pad  pad
+y_d2       5    5    4    4    4    5    5    1    1    4    5    5    5    1    1    1    1    1    1    2    2    1    1    1  pad  pad  pad  pad  pad  pad  pad  pad
+y_q        M    M    M    M    M   D7    M    M    M    M    M   D7   D7    M    M    M    M    M    M    m    m    M    M    M  pad  pad  pad  pad  pad  pad  pad  pad
+y_inv      0    0    0    0    0    1    0    0    0    0    0    0    0    0    0    2    2    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_ex    none none none none none none none none none none none none none none none none none none none none none none none none  pad  pad  pad  pad  pad  pad  pad  pad
+valid      y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    y    n    n    n    n    n    n    n    n
+y_cc       0    0    1    0    0    1    0    1    0    1    1    0    0    1    0    0    0    0    0    1    0    1    0    0    0    0    0    0    0    0    0    0
+pred_cc    0    1    0    0    0    1    0    1    0    1    1    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+y_k        4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4    4   42   42   42   42   42   42   42   42
+pred_k     1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+pred_d1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_d2    0    4    4    0    0    4    4    0    0    1    4    4    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_q     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_inv    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+pred_ex    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+Early stopping.
+
+HT functional harmony recognition on Sonatas-1:
+training time = 0.39 hr
+best epoch = 16
+best score = [0.7238 0.778  0.9278 0.607  0.728  0.6973 0.93   0.7487 0.717  0.7325
+ 0.7237]
+best slope = 4.594972986357222
