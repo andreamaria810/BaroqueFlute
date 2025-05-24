@@ -5,3 +5,5 @@
 .mscbackup
 .idea/
 .vscode/
+tf/
+baroque_model_training/Sonatas_preprocessed_data_MIREX_Mm.pickle
